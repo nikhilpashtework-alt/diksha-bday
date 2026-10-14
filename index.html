@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Dikshu ♡ From Nikhil</title>
+  <meta name="description" content="A little birthday world, made by Nikhil for Dikshu.">
+  <meta name="theme-color" content="#fff0f5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="is-loading">
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-orbit">♡</div>
+    <div class="loader-cake">🎂</div>
+    <p>Something special is waiting for you, Dikshu…</p><span>Made with love by Nikhil</span>
+  </div>
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <header class="nav" id="nav" hidden>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">Dikshu <span>♡</span> Nikhil</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks"
+        aria-label="Open menu"><i></i><i></i><i></i></button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <ul>
+          <li><a href="#message">Message</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#letter">Letter</a></li>
+          <li><a href="#memories">Photos</a></li>
+          <li><a href="#reasons">Reasons</a></li>
+          <li><a href="#wish">My Wish</a></li>
+          <li><a href="#surprise">Surprise</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A little birthday universe, just for you</p>
+        <h1 class="hero-title" id="heroTitle">Happy Birthday,<br><em>My Dikshu!</em> <span>♡</span></h1>
+        <p class="hero-sub">Today is all about you, your beautiful smile, and the happiness you deserve.</p>
+        <p class="hero-from">From your Nikhil, with all the love in my heart.</p>
+        <div class="cake" id="heroCake" aria-hidden="true"><span>🕯️</span>🎂</div>
+        <p class="wish-note" id="wishNote" aria-live="polite"></p>
+        <div class="hero-actions"><button class="btn btn-ghost" id="wishBtn">Make a Wish ✨</button><button
+            class="btn btn-primary pulse" id="openSurprise">Open Your Birthday Surprise 🎁</button></div>
+        <a class="scroll-cue" href="#message" aria-label="Scroll to birthday message">↓</a>
+      </div>
+    </section>
+    <div id="content" class="locked">
+      <section class="section message" id="message">
+        <div class="container narrow">
+          <article class="msg-card glass-strong" id="msgCard">
+            <p class="eyebrow">From my heart to yours</p>
+            <h2 class="script-title">To the Girl Who Means So Much to Me</h2>
+            <div class="msg-body" id="msgBody"></div>
+          </article>
+        </div>
+      </section>
+      <section class="section story" id="story">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Chapter one</p>
+            <h2 class="script-title">Our Little Love Story</h2>
+            <p class="highlight-date">1 June 2026 — The Beginning of Us</p>
+            <p class="section-sub">I hope our story keeps growing into something beautiful, one kind conversation and
+              one happy memory at a time.</p>
+          </header>
+          <div class="counter-card glass reveal">
+            <p class="counter-heading">Our story began</p>
+            <p class="counter-date">1 June 2026</p>
+            <p class="counter-number" id="dayCount">–</p>
+            <p class="counter-label" id="dayLabel">Days since our beginning</p>
+          </div>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+      </section>
+      <section class="section letter-section" id="letter">
+        <div class="container narrow">
+          <header class="section-head reveal">
+            <p class="eyebrow">A few words I want you to keep</p>
+            <h2 class="script-title">A Letter, Written With All My Love</h2>
+            <p class="section-sub">Tap the envelope when you're ready. Take your time reading it. 💌</p>
+          </header>
+          <div class="envelope-wrap reveal"><button class="envelope" id="envelope"
+              aria-label="Open Nikhil's birthday letter"><span class="env-paper">For Dikshu ♡</span><span
+                class="env-flap"></span><span class="env-seal">♥</span></button>
+            <p class="envelope-hint">A little letter, just for you</p>
+          </div>
+        </div>
+      </section>
+      <section class="section gallery" id="memories">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Little moments, big feelings</p>
+            <h2 class="script-title">Beautiful Memories With You</h2>
+            <p class="section-sub">Add your favourite photos to the <code>images</code> folder. Tap a photo to see it
+              bigger.</p>
+          </header>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+      </section>
+      <section class="section reasons" id="reasons">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">If I had a million, I'd still find more</p>
+            <h2 class="script-title">Reasons I Love You</h2>
+          </header>
+          <div class="cards-grid" id="reasonsGrid"></div>
+          <p class="big-quote reveal reasons-quote">You don't have to be perfect to be loved, Dikshu. You deserve
+            happiness, respect, and the freedom to be yourself.</p>
+        </div>
+      </section>
+      <section class="section wish" id="wish">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">My wish for your new year</p>
+            <h2 class="script-title">For You… And for Us</h2>
+          </header>
+          <div class="wish-layout">
+            <figure class="wish-photo reveal">
+              <div class="frame"><img src="images/memory-3.png" alt="A favourite memory of Nikhil and Dikshu"
+                  loading="lazy"></div>
+            </figure>
+            <div class="wish-text glass-strong reveal" id="wishText"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section surprise" id="surprise">
+        <div class="container narrow center">
+          <header class="section-head reveal">
+            <p class="eyebrow">One last little thing</p>
+            <h2 class="script-title">Dikshu, this is for you…</h2>
+            <p class="section-sub">A tiny reminder that you're loved, today and on all the ordinary days too.</p>
+          </header><button class="heart-button reveal" id="surpriseBtn"><span class="heart-shape">♥</span><span>One Last
+              Birthday Surprise 🎁</span></button>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer-mono">D <span class="beat">♡</span> N</p>
+        <p>Made with love by Nikhil, especially for Dikshu.</p>
+        <p>Happy Birthday, my love! 🎂💖</p><button class="btn btn-ghost btn-small" id="toTop">Back to top ↑</button>
+      </footer>
+    </div>
+  </main>
+  <div class="modal letter-modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle"
+    aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="letter-paper" id="letterPaper" tabindex="-1">
+      <div class="letter-tools"><button class="chip" id="letterSkip">Read all</button><button class="chip"
+          id="letterReplay">Replay ↺</button><button class="chip chip-close" id="letterClose"
+          aria-label="Close letter">✕</button></div>
+      <h2 class="sr-only" id="letterTitle">A birthday letter from Nikhil to Dikshu</h2>
+      <div class="letter-body" id="letterBody"></div>
+      <p class="signature" id="letterSignature">Yours, Nikhil ❤️</p>
+    </article>
+  </div>
+  <div class="modal surprise-modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle"
+    aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="fireworks" id="fireworks"></div>
+    <article class="surprise-panel" id="surprisePanel" tabindex="-1">
+      <p class="eyebrow">A birthday wish from me to you</p>
+      <h2 id="surpriseTitle" class="script-title">Happy Birthday, my Dikshu!</h2>
+      <div class="surprise-text" id="surpriseText"></div>
+      <p class="surprise-mono">D ♡ N</p>
+      <p class="surprise-final">Made with love by Nikhil, especially for Dikshu. 🎂💖</p><button
+        class="btn btn-ghost btn-small" id="surpriseClose">Close ♡</button>
+    </article>
+  </div>
+  <div class="modal lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer"
+    aria-hidden="true">
+    <div class="modal-backdrop" data-close></div><button class="lb-btn lb-close" id="lbClose"
+      aria-label="Close photo">✕</button><button class="lb-btn lb-prev" id="lbPrev"
+      aria-label="Previous photo">‹</button><button class="lb-btn lb-next" id="lbNext"
+      aria-label="Next photo">›</button>
+    <figure class="lb-figure"><img id="lbImg" alt="">
+      <figcaption>
+        <p id="lbCaption" class="lb-caption"></p>
+        <p id="lbDesc" class="lb-desc"></p>
+        <p id="lbCount" class="lb-count"></p>
+      </figcaption>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

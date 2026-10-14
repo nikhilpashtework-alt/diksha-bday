@@ -13,7 +13,6 @@
   --glass: rgba(255, 255, 255, .76);
   --shadow: 0 24px 70px rgba(93, 39, 60, .1);
   --shadow-soft: 0 12px 34px rgba(93, 39, 60, .08);
-  --script: "Sacramento", cursive;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", system-ui, sans-serif;
   --nav-h: 76px;
@@ -70,7 +69,7 @@ p, h1, h2, h3, figure { margin: 0; }
 }
 .script-title {
   color: var(--rose);
-  font: 400 clamp(3rem, 6.5vw, 5rem)/1.03 var(--script);
+  font: 400 clamp(3rem, 6.5vw, 5rem)/1.03 var(--serif);
 }
 .section-head { max-width: 760px; margin: 0 auto 3.25rem; text-align: center; }
 .section-sub { max-width: 640px; margin: 1rem auto 0; color: var(--muted); }
@@ -100,7 +99,7 @@ p, h1, h2, h3, figure { margin: 0; }
 .loader.is-done { visibility: hidden; opacity: 0; }
 .loader-orbit { color: var(--rose); font-size: 3rem; animation: beat 1s infinite; }
 .loader-cake { font-size: 4rem; }
-.loader p { color: var(--rose); font: 2.6rem/1.15 var(--script); }
+.loader p { color: var(--rose); font: 2rem/1.3 var(--serif); }
 .loader > span { color: var(--muted); font-size: .76rem; letter-spacing: .09em; }
 .ambient, .confetti { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
 .ambient { z-index: 1; }
@@ -132,7 +131,7 @@ p, h1, h2, h3, figure { margin: 0; }
   justify-content: space-between;
   gap: 1.5rem;
 }
-.nav-logo { color: var(--rose-deep); font: 2rem/1 var(--script); white-space: nowrap; }
+.nav-logo { color: var(--rose-deep); font: 600 1.2rem/1 var(--serif); white-space: nowrap; }
 .nav-logo span { color: #d987a2; }
 .nav-links ul { display: flex; gap: .15rem; margin: 0; padding: 0; list-style: none; }
 .nav-links a {
@@ -194,11 +193,11 @@ p, h1, h2, h3, figure { margin: 0; }
 }
 .hero-content { width: min(900px, 100%); color: white; text-shadow: 0 2px 24px rgba(30, 12, 24, .35); }
 .hero .eyebrow { color: #ffe6ed; }
-.hero-title { font: 400 clamp(4.4rem, 11vw, 9.5rem)/.88 var(--script); }
+.hero-title { font: 500 clamp(3.1rem, 8vw, 7rem)/1.04 var(--serif); letter-spacing: -.055em; }
 .hero-title em { color: #ffe7ed; font-style: normal; }
 .hero-title span { font: .55em var(--serif); }
 .hero-sub { max-width: 600px; margin: 1.6rem auto .55rem; font: clamp(1rem, 2.2vw, 1.25rem)/1.8 var(--serif); }
-.hero-from { font: 2rem/1.3 var(--script); }
+.hero-from { font: 500 1.15rem/1.6 var(--sans); letter-spacing: .02em; }
 .cake { margin: .8rem auto .25rem; font-size: 3.3rem; filter: drop-shadow(0 8px 16px #421b2d45); animation: bob 3s ease-in-out infinite; }
 .wish-note { min-height: 1.6rem; color: #ffebc9; font-size: .9rem; }
 .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; margin: 1rem auto; }
@@ -236,7 +235,7 @@ p, h1, h2, h3, figure { margin: 0; }
 .msg-body { margin-top: 1.6rem; text-align: left; }
 .msg-body p { margin: 0 0 1rem; opacity: 0; transform: translateY(10px); transition: opacity .5s, transform .5s; }
 .msg-body p.shown { opacity: 1; transform: none; }
-.msg-body p:first-child, .msg-body p:last-child { color: var(--rose); font: 2rem/1.35 var(--script); }
+.msg-body p:first-child, .msg-body p:last-child { color: var(--rose); font: 500 1.2rem/1.7 var(--serif); }
 .story { background: linear-gradient(180deg, #fff1f4, #fffbf7); }
 .highlight-date {
   display: inline-block;
@@ -250,7 +249,7 @@ p, h1, h2, h3, figure { margin: 0; }
   font-weight: 700;
 }
 .counter-card { max-width: 400px; margin: 0 auto 4rem; padding: 1.8rem; text-align: center; }
-.counter-heading { color: var(--rose); font: 2.4rem/1.2 var(--script); }
+.counter-heading { color: var(--rose); font: 500 1.4rem/1.5 var(--serif); }
 .counter-date, .counter-label { color: var(--muted); font-size: .85rem; }
 .counter-number { color: var(--rose); font-size: clamp(3.5rem, 8vw, 5rem); font-weight: 700; line-height: 1.2; }
 .timeline { position: relative; display: grid; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
@@ -300,7 +299,7 @@ p, h1, h2, h3, figure { margin: 0; }
   border-radius: 7px;
   color: var(--rose);
   background: #fffaf2;
-  font: 2.5rem var(--script);
+  font: 500 1.35rem var(--serif);
   place-items: center;
   transition: transform .8s;
 }
@@ -325,11 +324,11 @@ p, h1, h2, h3, figure { margin: 0; }
 .polaroid-frame { position: relative; display: block; overflow: hidden; aspect-ratio: 1 / 1.08; border-radius: 3px; background: linear-gradient(145deg, #f2dbe1, #f8ecec); }
 .polaroid-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
 .polaroid:hover .polaroid-frame img { transform: scale(1.04); }
-.polaroid-missing { position: absolute; inset: 0; display: none; align-content: center; justify-items: center; gap: .35rem; color: var(--rose); font: 1.5rem var(--script); }
+.polaroid-missing { position: absolute; inset: 0; display: none; align-content: center; justify-items: center; gap: .35rem; color: var(--rose); font: 500 1rem var(--sans); }
 .polaroid-missing span:first-child { font: 2rem var(--serif); }
 .polaroid.is-missing .polaroid-missing { display: grid; }
 .polaroid.is-missing img { visibility: hidden; }
-.polaroid-caption { display: block; min-height: 3rem; padding: .55rem .2rem .65rem; color: #65515a; font: 1.45rem/1.3 var(--script); text-align: center; }
+.polaroid-caption { display: block; min-height: 3rem; padding: .55rem .2rem .65rem; color: #65515a; font: 500 1rem/1.5 var(--serif); text-align: center; }
 
 /* Reasons, birthday wish, final note */
 .reasons { background: linear-gradient(180deg, #fff4f5, #fffaf7); }
@@ -356,7 +355,7 @@ p, h1, h2, h3, figure { margin: 0; }
 .frame img { width: 100%; aspect-ratio: 4/5; border-radius: 17px; object-fit: cover; }
 .wish-text { padding: clamp(1.5rem, 4vw, 2.6rem); }
 .wish-text p { margin: 0 0 1rem; }
-.wish-text p:last-child { margin-bottom: 0; color: var(--rose); font: 1.9rem/1.4 var(--script); }
+.wish-text p:last-child { margin-bottom: 0; color: var(--rose); font: 500 1.05rem/1.7 var(--serif); }
 .surprise { overflow: hidden; background: radial-gradient(ellipse at 50% 0%, #f9d9e3, #fff5f5 72%); }
 .heart-button {
   display: inline-grid;
@@ -403,7 +402,7 @@ p, h1, h2, h3, figure { margin: 0; }
 .letter-body .line { margin-bottom: 1rem; opacity: 0; transform: translateY(8px); transition: opacity .45s, transform .45s; white-space: pre-line; }
 .letter-body .line.shown { opacity: 1; transform: none; }
 .letter-body .line.special { color: var(--rose); font-size: 1.35rem; }
-.signature { margin-top: 1rem; color: var(--rose); font: 2rem/1.3 var(--script); opacity: 0; transition: opacity .5s; }
+.signature { margin-top: 1rem; color: var(--rose); font: 500 1.15rem/1.7 var(--serif); opacity: 0; transition: opacity .5s; }
 .signature.shown { opacity: 1; }
 .surprise-modal { overflow: hidden; }
 .fireworks { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
@@ -418,7 +417,7 @@ p, h1, h2, h3, figure { margin: 0; }
 .lb-figure img { max-height: 72vh; width: auto; border-radius: 12px; object-fit: contain; box-shadow: 0 20px 70px rgba(0, 0, 0, .35); }
 .lb-figure img[hidden] { display: none; }
 .lb-figure figcaption { padding-top: 1rem; color: white; text-align: center; }
-.lb-caption { font: 1.7rem var(--script); }
+.lb-caption { font: 500 1.2rem var(--serif); }
 .lb-desc, .lb-count { color: rgba(255, 255, 255, .75); font-size: .78rem; }
 .lb-btn { position: absolute; z-index: 2; display: grid; width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .38); border-radius: 50%; color: white; background: rgba(255, 255, 255, .12); font-size: 1.7rem; place-items: center; transition: background .2s; }
 .lb-btn:hover { background: rgba(255, 255, 255, .25); }
@@ -466,8 +465,8 @@ p, h1, h2, h3, figure { margin: 0; }
   :root { --nav-h: 68px; }
   body { font-size: 15px; }
   .hero { min-height: 820px; min-height: 100svh; }
-  .hero-title { font-size: clamp(4rem, 17vw, 6rem); }
-  .hero-from { font-size: 1.8rem; }
+  .hero-title { font-size: clamp(2.5rem, 11vw, 4.2rem); }
+  .hero-from { font-size: 1rem; }
   .wish-layout { grid-template-columns: 1fr; gap: 2rem; }
   .wish-photo { width: min(320px, 84%); }
   .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -481,7 +480,7 @@ p, h1, h2, h3, figure { margin: 0; }
   .hero-actions .btn { width: min(330px, 90vw); }
   .gallery-grid, .cards-grid { gap: .8rem; }
   .polaroid { padding: 7px 7px 0; }
-  .polaroid-caption { min-height: 2.8rem; font-size: 1.3rem; }
+  .polaroid-caption { min-height: 2.8rem; font-size: .9rem; }
   .reason-card { min-height: 210px; padding: 1rem .8rem; }
   .reason-card h3 { font-size: 1.35rem; }
   .counter-number { font-size: 3.6rem; }
